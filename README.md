@@ -17,4 +17,5 @@
 - Different dev and prod bundles
 
 
-  
+git branch -M  main
+git push  -u origin main

@@ -4,8 +4,8 @@
   "description": "This is Namaste React by Ajay Sharma",
   "scripts": {
     "test": "jest",
-    "start": "parcel index.html",
     "build": "parcel build index.html",
+    "start": "parcel index.html",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
@@ -32,13 +32,14 @@
   },
   "homepage": "https://github.com/ajaysharma1105/namaste-react#readme",
   "devDependencies": {
-    "parcel": "^2.14.4"
+    "parcel": "^2.14.4",
+    "prettier": "3.5.3"
   },
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
   },
   "browserlist": [
-    "last 2 version" 
+    "last 2 version"
   ]
 }
