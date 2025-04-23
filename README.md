@@ -18,4 +18,6 @@
 
 
 git branch -M  main
+git add .
+git commit -m "sdghsd"
 git push  -u origin main
