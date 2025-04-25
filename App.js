@@ -36,6 +36,7 @@ const HeadingComponent = () => (
         {/* //Component inside a component - Componenent composition */}
         {number}
         {title}
+        {HeadingComponent2()}
         <h1 id="headingComponent" className="head">Hello World from React Functional Component!</h1>
     </div>
 );
