@@ -42,13 +42,17 @@ const Header = () => {
 };
 
 const RestaurantCard = (props) => {
-  const { resObj} = props;
-  const{cloudinaryImageId,name,cuisines,avgRating,costForTwo} = resObj?.info;
+  const { resObj } = props;
+  const { cloudinaryImageId, name, cuisines, avgRating, costForTwo } =
+    resObj?.info;
   return (
     <div className="restaurant-card">
       <img
         className="res-logo"
-        src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+cloudinaryImageId}
+        src={
+          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
+          cloudinaryImageId
+        }
         alt="Restaurant"
       />
       <h3>{name}</h3>
