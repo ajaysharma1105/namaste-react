@@ -6,7 +6,7 @@ const Body = () => {
 
   // Local State Variable - Super Powerful variable
 
-  const [listOfRestaurants, setListOfRestaurants] = useState(restaurantList);
+  const [listOfRestaurants, setListOfRestaurants] = useState([]);
 
 
   useEffect(()  => {
@@ -22,6 +22,10 @@ const fetchData = async () => {
     //Optional Chaining
     setListOfRestaurants(json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants);
   };
+
+  if(listOfRestaurants.length === 0) {
+    return <h1>Loading...</h1>;
+  }
 
 
   // Normal JS variable
